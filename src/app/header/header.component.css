@@ -1,0 +1,28 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.logo{
+  width: 50px;
+}
+
+@media (max-width: 768px){
+  .navigation{
+    display: none;
+  }
+  .drawer{
+    display: block;
+  }
+}
+
+@media (min-width: 768px){
+  .navigation{
+    display: block;
+  }
+  .drawer{
+    display: none;
+  }
+}

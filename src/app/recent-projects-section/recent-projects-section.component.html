@@ -1,0 +1,36 @@
+<div class="recent-projects-section" id="projects">
+  <div class="tui-text_h3">My Recent Projects</div>
+  <div class="recent-project-list">
+    <div class="project-item" *ngFor="let project of projects">
+      <img class="img" [src]="project.imageUrl" alt="project image" />
+      <div class="project-description">
+        <div class="padding">
+          <div class="tui-text_h6">{{ project.description }}</div>
+          <a
+            tuiButton
+            appearance="outline"
+            data-mode="checked"
+            class="margin"
+            [href]="project.url"
+            size="s"
+            target="_blank"
+            >Visit Website</a
+          >
+        </div>
+        <div class="project-skills-list tui-text_body-s">
+          {{ project.technologies }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <a
+    tuiButton
+    class="tui-space_vertical-15"
+    appearance="outline"
+    href="https://github.com/LukaVukovic2"
+    target="_blank"
+  >
+    <i class="fa-brands fa-github"></i>
+    More details on GitHub
+  </a>
+</div>

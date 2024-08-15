@@ -1,0 +1,61 @@
+<div class="contact-form" id="contact">
+  <div class="container">
+    <form [formGroup]="contactForm" (submit)="onSubmit($event)" action="https://formspree.io/f/xblryqjv" method="POST">
+      <h3 class="tui-form__header">Contact</h3>
+      <div class="form-flex-container">
+        <div class="sender-info">
+          <div>
+            <tui-input formControlName="nameValue">
+              Name
+              <input
+                placeholder="Enter your name"
+                tuiTextfieldLegacy
+                name="name"
+                id="name"
+                autocomplete="off"
+                autocapitalize="sentences"
+                type="text"
+                required
+              />
+              <span class="tui-required"></span>
+            </tui-input>
+          </div>
+
+          <div>
+            <tui-input formControlName="emailValue">
+              Email
+              <input
+                placeholder="john@doe.com"
+                tuiTextfieldLegacy
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="off"
+                required
+              />
+              <span class="tui-required"></span>
+            </tui-input>
+          </div>
+        </div>
+
+        <tui-textarea formControlName="content" [expandable]="true">
+          Additional Details
+          <textarea
+            placeholder="Write your message here"
+            tuiTextfieldLegacy
+            name="content"
+            id="content"
+            required
+          ></textarea>
+          <span class="tui-required"></span>
+        </tui-textarea>
+
+        <div class="form-submit">
+          <button size="l" tuiButton type="submit" appearance="outline" class="tui-form__button">
+            Send
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

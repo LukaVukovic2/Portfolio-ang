@@ -1,0 +1,11 @@
+<nav class="nav">
+  <ul class="nav-list">
+    <li *ngFor="let item of navItems" class="nav-list-item">
+      <a
+        class="nav-link"
+        [href]="item.route"
+        >{{ item.label }}</a
+      >
+    </li>
+  </ul>
+</nav>

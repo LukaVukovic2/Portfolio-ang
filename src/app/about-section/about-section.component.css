@@ -1,0 +1,17 @@
+.about-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 100px 20% 415px 20%;
+  text-align: center;
+}
+
+@media(max-width: 768px){
+  .about-section{
+    padding: 100px 10% 800px 10%;
+  }
+}

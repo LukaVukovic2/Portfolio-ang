@@ -1,0 +1,11 @@
+.drawer-container{
+  background-color: #004a9a;
+  color: #fff;
+  height: 100%;
+  padding: 10px;
+}
+
+.drawer{
+  display: flex;
+  flex-direction: column;
+}

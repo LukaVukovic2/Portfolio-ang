@@ -1,0 +1,22 @@
+<button
+  tuiButton
+  appearance="flat"
+  type="button"
+  (click)="toggle(true)"
+  (tuiActiveZoneChange)="toggle($event)"
+>
+  <tui-icon icon="@tui.fa.solid.bars" style="color: #007bff;" />
+  <div *tuiSidebar="open; direction: 'right'" class="drawer-container">
+    <div class="drawer">
+      <button
+        appearance="glass"
+        tuiButtonClose
+        tuiIconButton
+        (click)="toggle(false)"
+      >
+        Close
+      </button>
+      <app-navigation></app-navigation>
+    </div>
+  </div>
+</button>

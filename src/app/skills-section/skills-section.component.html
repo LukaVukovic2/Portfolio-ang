@@ -1,0 +1,33 @@
+<div class="skills-section">
+  <div tuiCardLarge>
+    <section id="skills-list-container">
+      <div
+        *ngFor="let skill of skills"
+        tuiCardMedium
+        tuiSurface="elevated"
+        class="skill-card"
+      >
+        <img
+          [src]="'assets/images/' + skill.icon"
+          alt="idea"
+          class="skill-image"
+          width="50%"
+        />
+        <h2 tuiTitle>
+          {{ skill.title }}
+        </h2>
+        <span tuiSubtitle>{{
+          skill.description
+        }}</span>
+        <div class="tui-text_h6">
+          {{ skill.list.title }}
+        </div>
+        <ul>
+          <li *ngFor="let item of skill.list.items">
+            {{ item }}
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<footer class="footer">
+  <ul class="footer-icon-list">
+    <li *ngFor="let icon of footerIcons">
+      <a
+        class="footer-icon"
+        [href]="icon.url"
+        target="_blank"
+        >
+        <i [class]="icon.class"></i>
+      </a>
+    </li>
+  </ul>
+  <div class="footer-text">
+    <div class="tui-text_body-xl">© 2024 Luka Vuković</div>
+    <a style="text-decoration: none;" target="_blank" href="https://www.flaticon.com/free-animated-icons/knowledge" title="knowledge animated icons">Knowledge animated icons created by Freepik - Flaticon</a>
+  </div>
+</footer>

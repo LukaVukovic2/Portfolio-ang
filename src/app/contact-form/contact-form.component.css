@@ -1,0 +1,40 @@
+.form-flex-container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sender-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.sender-info > div{
+  flex: 1;
+}
+
+.container{
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 32px 32px 32px;
+  margin-top: 50px;
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.form-submit{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px){
+  .sender-info{
+    flex-direction: column;
+  }
+  .container{
+    width: 80%;
+  }
+}

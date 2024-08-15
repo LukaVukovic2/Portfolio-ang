@@ -1,0 +1,37 @@
+.footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 40px 20px;
+  margin-top: 60px;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.footer-icon{
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.footer-icon:hover{
+  background-color: white;
+  color: #007bff;
+}
+
+.footer-icon-list{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.footer-text{
+  text-align: center;
+}
+
+@media(max-width: 768px){
+  .footer{
+    flex-direction: column;
+  }
+}
