@@ -14,7 +14,7 @@ export class SkillsSectionComponent {
       description: 'I try to implement intuitive design and logic in my work',
       list: {
         title: 'Tech stack',
-        items: ['HTML', 'CSS', 'JavaScript', 'Angular', 'Bootstrap', 'Firebase', 'MySQL', 'Figma', 'Git']},
+        items: ['HTML', 'CSS', 'JavaScript', 'React', 'Next.js', 'Bootstrap', 'Firebase', 'Git']},
     },
     {
       icon: 'idea.gif',

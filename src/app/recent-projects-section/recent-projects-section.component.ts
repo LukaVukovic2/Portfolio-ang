@@ -9,10 +9,10 @@ import { Project } from '../models/project.model';
 export class RecentProjectsSectionComponent {
   projects: Project[] = [
     {
-      description: "Browse the website, add to cart, and checkout*",
-      imageUrl: "assets/images/webshop.png",
-      technologies: 'Angular, TypeScript, Firebase',
-      url: "https://angular-webshop-7ade4.web.app"
+      description: "No new show ideas? No problem!",
+      imageUrl: "assets/images/tvshows-app.png",
+      technologies: 'React, Next.js, TypeScript, CSS, Chakra UI',
+      url: "https://tv-shows-app-one.vercel.app"
     },
     {
       description: "Search and rate your favourite movies and actors",
@@ -27,10 +27,10 @@ export class RecentProjectsSectionComponent {
       url: "https://lukavukovic2.github.io/JS-Quizzes/user-choice.html"
     },
     {
-      description: "No new show ideas? No problem!",
-      imageUrl: "assets/images/tvshows-app.png",
-      technologies: 'React, Next.js, TypeScript, CSS, Chakra UI',
-      url: "https://tv-shows-app-one.vercel.app"
+      description: "Browse the website, add to cart, and checkout*",
+      imageUrl: "assets/images/webshop.png",
+      technologies: 'Angular, TypeScript, Firebase',
+      url: "https://angular-webshop-7ade4.web.app"
     }
   ];
 }
